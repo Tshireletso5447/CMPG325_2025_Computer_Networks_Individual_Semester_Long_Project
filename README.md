@@ -97,3 +97,42 @@
 
 **Evidence:**
 <img width="1290" height="546" alt="Screenshot 2025-10-20 113013" src="https://github.com/user-attachments/assets/a98ff444-e346-4ccd-b832-6629f1a2cda2" />
+
+
+## Ring Topology Implementation
+
+**File:** `ring-topology.pkt`
+
+**Design Approach:**
+- Physical ring connections between all PCs
+- Demonstrates circular data flow concept
+- Shows token ring network principles
+
+**Devices:**
+- 4 × PC-PT (PC-Ring1, PC-Ring2, PC-Ring3, PC-Ring4)
+
+**IP Configuration:**
+- PC-Ring1: 192.168.40.10/24, 2001:DB8:ACAD:40::10/64
+- PC-Ring2: 192.168.40.11/24, 2001:DB8:ACAD:40::11/64
+- PC-Ring3: 192.168.40.12/24, 2001:DB8:ACAD:40::12/64
+- PC-Ring4: 192.168.40.13/24, 2001:DB8:ACAD:40::13/64
+
+**Connection Pattern:**
+- PC-Ring1 ↔ PC-Ring2 ↔ PC-Ring3 ↔ PC-Ring4 ↔ PC-Ring1
+- Complete circular connectivity
+
+**Key Features Demonstrated:**
+- Circular data path implementation
+- Each device acts as repeater for others
+- Single break vulnerability
+- Equal access to network medium
+
+**Testing Results:**
+- ✅ Successful IPv4 communication between all devices
+- ✅ Successful IPv6 communication between all devices
+- ✅ Circular path verified through traceroute
+- ✅ Single break vulnerability confirmed
+- ✅ Direct neighbor communication functional
+
+**Evidence:**
+<img width="1278" height="554" alt="Screenshot 2025-10-20 220025" src="https://github.com/user-attachments/assets/c2b6b1d6-446b-4197-b716-41d3d307f3f0" />
