@@ -96,7 +96,8 @@
 - ✅ Single point of failure demonstrated
 
 **Evidence:**
-<img width="1290" height="546" alt="Screenshot 2025-10-20 113013" src="https://github.com/user-attachments/assets/a98ff444-e346-4ccd-b832-6629f1a2cda2" />
+<img width="1298" height="563" alt="Screenshot 2025-10-20 191905" src="https://github.com/user-attachments/assets/b5dcf0dc-ec22-47d6-ac45-3a0441f2f935" />
+
 
 
 ## Ring Topology Implementation
