@@ -137,3 +137,50 @@
 
 **Evidence:**
 <img width="1278" height="554" alt="Screenshot 2025-10-20 220025" src="https://github.com/user-attachments/assets/c2b6b1d6-446b-4197-b716-41d3d307f3f0" />
+
+
+
+## Extended Star with VLANs Implementation
+
+**File:** `extended-star.pkt`
+
+**Design Approach:**
+- Hierarchical star topology with core and access layers
+- VLAN segmentation for department isolation
+- Trunk links between switches for VLAN propagation
+
+**Devices:**
+- 1 × Switch 3560 (SW-Core - Multilayer)
+- 2 × Switch 2960 (SW-Access1, SW-Access2)
+- 6 × PC-PT (Department PCs)
+
+**VLAN Configuration:**
+- VLAN 10: SALES (PC-Sales1, PC-Sales2, PC-Sales3)
+- VLAN 20: ENGINEERING (PC-Eng1, PC-Eng2)
+- VLAN 30: HR (PC-HR1)
+- VLAN 99: Management (Switch management)
+
+**IP Configuration:**
+- Sales VLAN: 192.168.50.10-12/24, GW: 192.168.50.1
+- Engineering VLAN: 192.168.50.20-21/24, GW: 192.168.50.1
+- HR VLAN: 192.168.50.30/24, GW: 192.168.50.1
+- IPv6: 2001:DB8:ACAD:50::/64 with respective host addresses
+
+**Key Features Demonstrated:**
+- Hierarchical network design
+- VLAN segmentation and isolation
+- Trunking between switches
+- Department-based security boundaries
+- Broadcast domain control
+
+**Testing Results:**
+- ✅ Intra-VLAN communication successful
+- ✅ Inter-VLAN communication properly blocked (no routing)
+- ✅ VLAN configurations verified on all switches
+- ✅ Trunk links operational between switches
+- ✅ Broadcast domains properly segmented
+
+**Evidence:**
+<img width="708" height="427" alt="Screenshot 2025-10-21 215418" src="https://github.com/user-attachments/assets/9782acf0-d147-4f79-9705-e20cb3b4206f" />
+<img width="1072" height="425" alt="Screenshot 2025-10-21 215440" src="https://github.com/user-attachments/assets/c8c15652-bfc9-4ba4-b2c1-103e69b94068" />
+
