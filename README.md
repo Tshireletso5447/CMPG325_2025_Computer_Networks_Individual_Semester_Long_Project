@@ -58,4 +58,42 @@
 - ✅ Multiple communication paths confirmed
 
 **Evidence:**
+<img width="1339" height="586" alt="Screenshot 2025-10-20 152518" src="https://github.com/user-attachments/assets/ffd46b5f-8d10-49a4-9e4d-dd4e7b7af605" />
+
+
+
+
+## Star Topology Implementation
+
+**File:** `star-topology.pkt`
+
+**Design Approach:**
+- Central switch with radial connections to all devices
+- Demonstrates switched environment with individual collision domains
+- Shows centralized network management
+
+**Devices:**
+- 1 × Switch 2960 (SW-Star-Central)
+- 4 × PC-PT (PC-Star1, PC-Star2, PC-Star3, PC-Star4)
+
+**IP Configuration:**
+- PC-Star1: 192.168.30.10/24, 2001:DB8:ACAD:30::10/64
+- PC-Star2: 192.168.30.11/24, 2001:DB8:ACAD:30::11/64
+- PC-Star3: 192.168.30.12/24, 2001:DB8:ACAD:30::12/64
+- PC-Star4: 192.168.30.13/24, 2001:DB8:ACAD:30::13/64
+
+**Key Features Demonstrated:**
+- Centralized switching and management
+- Individual collision domains per port
+- MAC address learning and forwarding
+- Single point of failure (central switch)
+
+**Testing Results:**
+- ✅ Full IPv4 connectivity between all devices
+- ✅ Full IPv6 connectivity between all devices
+- ✅ Switch MAC address table populated correctly
+- ✅ Directed switching (not broadcasting) verified
+- ✅ Single point of failure demonstrated
+
+**Evidence:**
 <img width="1290" height="546" alt="Screenshot 2025-10-20 113013" src="https://github.com/user-attachments/assets/a98ff444-e346-4ccd-b832-6629f1a2cda2" />
